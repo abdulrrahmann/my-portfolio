@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #00adb5;
+  --color-gray: #393e46;
+  --color-dark: #222831;
+  --color-light: #EEEEE;
+
+  --font-text: Poppins, sans-serif;
+  --font-logo: Oswald, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-3 px-5 text-lg font-medium bg-primary rounded-full cursor-pointer;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark);
+  font-family: var(--font-text);
+  color: #fff;
+}
+
+#message {
+  resize: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Small Screen Rules*/
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*Medium Screen Rules*/
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*Large Screen Rules*/
+  .container {
+    width: 1170px;
+  }
+}
+/* Mobile Screen */
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
