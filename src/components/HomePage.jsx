@@ -12,7 +12,7 @@ function HomePage() {
     <div id="home" className="container">
       <header className="py-6 flex items-center justify-between">
         <h2 className="font-logo font-extrabold tracking-wide text-3xl">
-          Alhamid
+          abdulrrahmann.
         </h2>
         <div className="gap-12 hidden sm:flex">
           <a
@@ -29,15 +29,38 @@ function HomePage() {
           </a>
           <a
             className="text-light text-lg tracking-wide font-medium"
+            href="#work"
+          >
+            My Works
+          </a>
+          <a
+            className="text-light text-lg tracking-wide font-medium"
             href="#contact"
           >
             Contact
           </a>
         </div>
-        <TiThMenu className="cursor-pointer sm:hidden" size={40} onClick={() => {setOpenMenu(prev => !prev)}}/>
+        <TiThMenu
+          className="cursor-pointer sm:hidden"
+          size={40}
+          onClick={() => {
+            setOpenMenu((prev) => !prev);
+          }}
+        />
         {openMenu && (
-          <div onClick={() => {setOpenMenu(prev => !prev)}} className="flex flex-col fixed left-0 top-0 w-full h-full p-10 z-10 bg-black/90 sm:hidden gap-12">
-            <IoClose className="cursor-pointer" size={40} onClick={() => {setOpenMenu((prev) => !prev)}} />
+          <div
+            onClick={() => {
+              setOpenMenu((prev) => !prev);
+            }}
+            className="flex flex-col fixed left-0 top-0 w-full h-full p-10 z-10 bg-black/90 sm:hidden gap-12"
+          >
+            <IoClose
+              className="cursor-pointer"
+              size={40}
+              onClick={() => {
+                setOpenMenu((prev) => !prev);
+              }}
+            />
             <a
               className="text-light text-lg tracking-wide font-medium border-b-2 pb-2 border-gray"
               href="#home"
@@ -49,6 +72,12 @@ function HomePage() {
               href="#about-me"
             >
               About Me
+            </a>
+            <a
+              className="text-light text-lg tracking-wide font-medium border-b-2 pb-2 border-gray"
+              href="#work"
+            >
+              My Works
             </a>
             <a
               className="text-light text-lg tracking-wide font-medium border-b-2 pb-2 border-gray"
