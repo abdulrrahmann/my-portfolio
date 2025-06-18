@@ -23,11 +23,11 @@ Deployed using Netlify.
 
 ## Preview
 
-![Portfolio Preview](src/images/my-portfolio.png)  
+![Portfolio Preview](src/images/my-portfolio.png)
 
 ## Live Demo
 
-View the live website: [https://.netlify.app](https://.netlify.app)
+View the live website: [https://abdulrrahman-portfolio.netlify.app/](https://abdulrrahman-portfolio.netlify.app/)
 
 ## Getting Started
 
@@ -38,3 +38,4 @@ git clone https://github.com/abdulrrahmann/my-portfolio.git
 cd portfolio
 npm install
 npm run dev
+```
